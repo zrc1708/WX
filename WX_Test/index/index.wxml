@@ -1,0 +1,5 @@
+<!--index/index.wxml-->
+<view>
+  <text catchtap='ToCompare'>数字比较</text>
+  <text catchtap='ToSurvey'>调查问卷</text>
+</view>

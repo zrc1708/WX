@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/Survey/Survey",
+    "index/index",
+    "pages/Compare/Compare"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

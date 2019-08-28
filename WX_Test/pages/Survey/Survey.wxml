@@ -1,0 +1,38 @@
+<!--pages/Survey/Survey.wxml-->
+<view class='container'>
+  <form bindsubmit='submit'>
+    <view>
+      <text>姓名</text>
+      <input name="name" value="{{name}}"></input>
+    </view>
+    <view>
+      <text>性别</text>
+      <radio-group name="gender">
+        <!-- <label><radio value='0' checked>男</radio></label>
+        <label><radio value='1'>女</radio></label> -->
+        <label wx:for='{{gender}}' wx:key="value">
+          <radio value='{{item.value}}' checked='{{item.checked}}'></radio>
+          {{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view>
+      <text>专业技能：</text>
+      <checkbox-group name="skills">
+        <!-- <label><checkbox value='html' checked>HTML</checkbox></label>
+        <label><checkbox value='css' checked>CSS</checkbox></label>
+        <label><checkbox value='js'>JavaScript</checkbox></label>
+        <label><checkbox value='ps'>Photoshop</checkbox></label> -->
+        <label wx:for='{{skills}}' wx:key="value">
+          <checkbox value='{{item.value}}' checked='{{item.checked}}'></checkbox>
+          {{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view>
+      <text>您的意见</text>
+      <textarea name="option" value='{{option}}'></textarea>
+    </view>
+    <button form-type='submit' >提交</button>
+  </form>
+</view>

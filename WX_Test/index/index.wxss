@@ -1,0 +1,7 @@
+/* index/index.wxss */
+text{
+  margin: 20rpx;
+  font-size: 60rpx;
+  display: block;
+  text-align: center;
+}
