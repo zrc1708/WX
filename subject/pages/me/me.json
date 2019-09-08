@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "推送",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#1296DB",
+  "enablePullDownRefresh": true
+}

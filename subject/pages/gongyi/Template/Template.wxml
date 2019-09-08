@@ -1,0 +1,8 @@
+<template name='M_Adv'>
+  <view class='biggst'>      
+        <text class='M_text'>{{welfaretitle}}</text>    
+      <view class='imagesize'>
+        <image  class="M_image" src="{{welfareimage}}" ></image>
+      </view>
+  </view>
+</template>

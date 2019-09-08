@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/Calculator/Calculator",
-    "pages/Survey/Survey",
     "index/index",
-    "pages/Compare/Compare"
+    "pages/Survey/Survey",
+    "pages/Compare/Compare",
+    "pages/Calculator/Calculator"
   ],
   "sitemapLocation": "sitemap.json"
 }

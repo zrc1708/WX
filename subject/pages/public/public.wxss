@@ -1,0 +1,6 @@
+@import'/pages/module/module.wxss';
+.Linn{
+ width: 100%;
+ background-color: #ebebeb;
+ border: 1px #ebebeb solid;
+}

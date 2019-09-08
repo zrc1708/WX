@@ -1,0 +1,19 @@
+<view class="Linn">
+
+  <view class="Linn_a">
+  
+     <text class="a_1">{{detailArr.workTitle}}</text>
+     <text class="a_2">{{detailArr.workMoney}}</text>
+     <view class="a_3">
+        <text>{{detailArr.workPostion}}</text>
+        <text>{{detailArr.workNeed}}</text>
+        <text>{{detailArr.workAddress}}</text>
+     </view>
+  </view>
+
+  <view class="Linn_b"></view>
+  <view class="Linn_c">
+     <text class="c_1">【职位描述】</text>
+     <text class="c_2">{{detailArr.workContent}}</text>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="Linn" style="height:{{windowHeight}}px;">
+
+  <view class="Linn_a">
+    <view class="Linn_d" catchtap="TOpublic">
+        <text>政府政策</text>
+        <image src="https://s2.ax1x.com/2019/09/05/nuAmvj.png"></image>
+    </view>
+    <view class="Linn_d" catchtap="TObenefit">
+        <text>便民信息</text>
+        <image src="https://s2.ax1x.com/2019/09/05/nuAKrn.png"></image>
+    </view>
+  </view>
+    
+  <view class="Linn_b" catchtap="TOwork">
+    <text>个人兼职</text>
+    <image src="https://s2.ax1x.com/2019/09/05/nuA7Rg.png"></image>
+  </view>  
+
+  <view class="Linn_a">
+    <view class="Linn_e" catchtap="TOMerchantAdv">
+        <text>商家广告</text>
+        <image src="https://s2.ax1x.com/2019/09/05/nuAHzQ.png"></image>
+    </view>
+    <view class="Linn_e" catchtap="TOwelfare">
+        <text>公益广告</text>
+        <image src="https://s2.ax1x.com/2019/09/05/nuAFVP.png"></image>
+    </view>
+  </view>  
+
+</view>

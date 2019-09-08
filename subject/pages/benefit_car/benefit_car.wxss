@@ -1,0 +1,15 @@
+@import'/pages/module/module.wxss';
+.Linn{
+
+ width: 100%;
+ background-color: #ebebeb;
+
+}
+
+.Linn_a{
+
+ width: 100%;
+ text-align: center;
+ padding-top: 20rpx;
+ font-size: 60rpx;
+}

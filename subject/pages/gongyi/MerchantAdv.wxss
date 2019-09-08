@@ -1,0 +1,5 @@
+/* pages/MerchantAdv/MerchantAdv.wxss */
+@import '/pages/MerchantAdv/Template/Template.wxss';
+page{
+  background:#f5f5f5;
+}

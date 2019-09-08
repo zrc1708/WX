@@ -1,0 +1,72 @@
+.Linn{
+
+ width: 100%;
+
+
+}
+
+
+.Linn_a{
+
+ width: 100%;
+ height: 360rpx;
+ margin: 4% 0 0 2%;
+ display: flex;
+ flex-direction: column;
+}
+
+.a_1{
+
+ font-size: 40rpx;
+ font-weight: bold;
+
+}
+
+.a_2{
+
+  font-size: 38rpx;
+  color: #F96647;
+  margin-top: 2%;
+}
+
+.a_3{
+
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.a_3 text{
+
+ font-size: 34rpx;
+ padding-top: 1%;
+}
+
+.Linn_b{
+
+ width: 100%;
+ border: 1px #ebebeb solid;
+}
+
+
+.Linn_c{
+
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ margin-top: 1%;
+}
+
+.c_1{
+
+ font-size: 34rpx;
+
+}
+
+.c_2{
+ 
+ width: 100%;
+ font-size: 34rpx;
+ margin-left: 2%;
+ line-height: 55rpx;
+}

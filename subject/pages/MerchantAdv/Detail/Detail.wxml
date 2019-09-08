@@ -1,0 +1,18 @@
+<!--pages/MerchantAdv/Detail/Detail.wxml-->
+<view class='biggst'>
+  <view class='title'><text>{{detailObj.Title}}</text></view>
+
+  <view class='imagebox'><image src='{{detailObj.Image}}'></image></view>
+
+    <view class='detail'>
+        <text>类别：{{detailObj.Category}}</text>
+        <text>联系人：{{detailObj.Contact}}</text>
+        <text>商家地址：{{detailObj.Address}}</text>
+    </view>
+  
+
+  <view class='buttom'>
+      <text>{{detailObj.Text}}</text>
+  </view>
+  
+</view>

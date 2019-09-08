@@ -1,0 +1,319 @@
+/* .Linn{
+
+  width: 100%;
+
+}
+
+.Linn_a{
+
+ width: 100%;
+ height: 35%;
+ position: relative;
+
+}
+
+.BIGimg{
+
+ width: 100%;
+ height: 100%;
+}
+
+.Linn_b{
+
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top:25%;
+  left: 0;
+
+}
+
+.Linn_c{
+
+ width: 46%;
+ height: 95%; 
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.SMALLimg{
+
+ width: 95%;
+ height: 95%;
+ border: 1px solid white;
+ border-radius: 50%;
+
+}
+
+.Linn_d{
+
+  width: 54%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.name{
+
+ color: white;
+ font-size: 50rpx;
+ margin-left: 2%;
+}
+
+.content{
+
+ color: white;
+ font-size: 40rpx;
+ margin-bottom: 2%;
+ position: absolute;
+ bottom: 2%;
+ left: 0;
+}
+
+
+.Linn_e{
+
+ width: 90%;
+ height: 15%;
+
+ margin: 8% auto;
+ display: flex;
+}
+
+.Linn_f{
+
+ width: 100%;
+ height: 100%;
+ flex-basis: 25%;
+ display: flex;
+ flex-direction: column;
+}
+
+.Linn_f image{
+
+ width:80rpx; 
+ height:80rpx;
+ margin-left: 18%;
+
+}
+
+.Linn_f text{
+
+ font-size: 34rpx;
+
+}
+
+.Linn_g{
+
+  width: 100%;
+  height: 12%;
+  margin: -5% auto;
+
+}
+
+.Linn_g image{
+
+  width: 720rpx;
+  height: 120rpx;
+}
+
+.Linn_h{
+ margin-top: 7%;
+ width: 100%;
+ height: 30%;
+
+}
+
+.h_1{
+
+ margin-left: 3%;
+ font-size: 34rpx;
+}
+
+.h_2{
+  width: 100%;
+  border: 1px #F9F9F9 solid;
+  margin-top: 2%;
+}
+
+.h_3{
+ 
+ width: 100%;
+ display: flex;
+ flex-basis: 50%;
+ margin-top: 2%;
+
+}
+
+.h_4{
+
+ width: 45%;
+ height: 70%;
+ display: flex;
+ flex-direction: column;
+ margin-left: 5%;
+
+}
+
+.h_5{
+
+ width: 90%;
+ height: 30%;
+ display: flex;
+
+ align-items: center;
+ margin-top: 6%;
+}
+
+.h_5 image{
+
+ width: 60rpx;
+ height: 60rpx;
+
+}
+
+.h_5 text{
+ 
+ font-size: 36rpx;
+ margin-left: 20%;
+}
+*/
+.Linn{
+
+ width: 100%;
+
+}
+
+
+.Li{
+
+  width: 100%;
+  background-color: #EEE0E5;
+  border: 1rpx solid #EEE0E5;
+}
+
+.Li_a{
+
+ width: 100%;
+ height: 400rpx;
+
+
+}
+
+.Li_b{
+
+  width: 90%;
+  height: 24%;
+  display: flex;
+  border: 2rpx solid white;
+  border-radius: 4%;
+  margin: auto;
+  /* z-index: 999; */
+}
+
+.Li_b image{
+
+ width: 40%;
+ height: 100%;
+ border-radius: 4% 0 0 4%;
+ border-right: 2rpx solid #EED2EE;
+}
+
+.Li_b textarea{
+
+ width: 95%;
+ height: 60%;
+ font-size: 36rpx;
+ padding: 20rpx 0 0 20rpx;
+ /* border: 1px red solid; */
+}
+
+
+.Li_c{
+
+ width: 90%;
+ height: 48%;
+ display: flex;
+ /* border: 2px red solid; */
+ margin: 2% auto;
+}
+
+
+.Li_d{
+ flex-basis: 44%;
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ margin-left: 4%;
+ /* border: 2rpx solid red; */
+}
+
+.Li_d image{
+
+ width: 100%;
+ height: 40%;
+ border-radius: 4% 4% 0 0;
+ border-bottom: 2rpx solid #EED2EE;
+}
+
+.Li_d textarea{
+
+ width: 100%;
+ height: 60%;
+ font-size: 20px;
+ padding: 20rpx 0 0 5rpx;
+  /* border: 1px red solid;  */
+}
+
+.Li_e{
+ width: 60%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ background-color: white;
+ /* border: 1px red solid; */
+ border-radius: 0 4% 4% 0;
+}
+
+.Li_e button{
+
+ width: 48%;
+ height: 28%;
+ font-size: 28rpx;
+ border-radius: 30rpx;
+ border: 1px solid #1296DB;
+ background-color: #1296DB; 
+ color: white;
+ margin-right: 5%;
+}
+
+
+.Li_f{
+
+ width: 100%;
+ height: 60%;
+ background-color: white;
+ border-radius: 0 0 4% 4%;
+ position: relative;
+ /* border: 1px red solid;  */
+}
+
+.Li_f button{
+
+ width: 90%;
+ height: 22%;
+ font-size: 15px;
+ border-radius: 40rpx;
+ border: 1px solid #1296DB;
+ background-color: #1296DB; 
+ color: white;
+ position: absolute;
+ bottom: 1%;
+ left: 5%;
+}

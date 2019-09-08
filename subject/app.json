@@ -1,0 +1,56 @@
+{
+  "pages": [
+    
+    "pages/register/register",
+    "pages/sort/sort",    
+    "pages/home/home",
+    "pages/public/public",
+    "pages/work/work",
+    "pages/work_detail/work_detail",
+    "pages/benefit_phone/benefit_phone",
+    "pages/benefit_car/benefit_car",
+    "pages/public_detail/public_detail",
+    "pages/benefit_action/benefit_action",
+    "pages/MerchantAdv/Detail/Detail",
+    "pages/MerchantAdv/MerchantAdv" ,
+    "pages/gongyi/MerchantAdv",
+    "pages/gongyi/Detail/Detail",
+    "pages/benefit/benefit",
+    
+    "pages/me/me"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#8f71ff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#646464",
+    "selectedColor": "#1296DB",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/image/tabBar/1.png",
+        "selectedIconPath": "/image/tabBar/2.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "/image/tabBar/4.png",
+        "selectedIconPath": "/image/tabBar/3.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "推送",
+        "iconPath": "/image/tabBar/6.png",
+        "selectedIconPath": "/image/tabBar/5.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

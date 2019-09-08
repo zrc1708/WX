@@ -1,0 +1,54 @@
+<view class="Linn" style="height:{{windowHeight}}px;">
+
+
+   <view class="Linn_a" catchtap="TOcar">
+   
+      <view class="a_1"><text>车辆车次</text></view>
+      <view class="a_2">
+         <view><text>1路   5：40  19：30   20分钟一班</text></view>
+         <view><text>2路   5：40  19：00   5分钟一班</text></view>
+         <view><text>6路   5：40  19：00   30分钟一班</text></view>
+         <view><text>......</text></view>
+      </view>
+
+   </view>
+
+   <view class="Linn_a" catchtap="TOphone">
+      <view class="a_3"><text>电话本</text></view>
+      <view class="a_4">
+         <view><text>佳丽国际婚纱:0516-89672855</text></view>
+         <view><text>沛县中粮白酒:18251590006</text></view>
+         <view><text>沛县金种子酒业:0516-89613829</text></view>
+         <view><text>......</text></view>
+      </view>
+   
+   </view>
+
+
+   <view class="Linn_a" catchtap="TOaction">
+   
+      <view class="a_5"><text>活动信息</text></view>
+      <view class="a_6">
+         <view><text>......</text></view>
+         <view><text>......</text></view>
+         <view><text>......</text></view>
+         <view><text>......</text></view>
+      </view>
+   
+   </view>
+
+
+   <view class="Linn_a">
+   
+      <view class="a_7"><text>其他</text></view>
+      <view class="a_8"><text>......</text></view>
+   
+   </view>
+
+
+
+
+
+
+
+</view>

@@ -1,0 +1,141 @@
+<!-- <view class="Linn" style="height:{{windowHeight}}px;">
+   
+    <view class="Linn_a">
+            <image class="BIGimg" src="https://s2.ax1x.com/2019/09/05/nuFGwV.jpg"></image>
+        <view class="Linn_b">
+            <view class="Linn_c">
+                 <image class="SMALLimg" src="{{userInfo.avatarUrl}}"></image>
+            </view>
+            <view class="Linn_d">
+                 <text class="name">{{userInfo.nickName}}</text>
+                 <text class="content">欢迎使用！</text>
+            </view>
+        </view>
+        
+    </view>
+
+
+     <view class="Linn_e">
+         <view class="Linn_f">
+            <image src="https://s2.ax1x.com/2019/09/05/nuFUW4.png"></image>
+            <text>我的发布</text>
+         </view>
+     
+         <view class="Linn_f">
+            <image src="https://s2.ax1x.com/2019/09/05/nuFBO1.png"></image>
+            <text>我的搜藏</text>
+         </view>
+     
+         <view class="Linn_f">
+            <image src="https://s2.ax1x.com/2019/09/05/nuFdSJ.png"></image>
+            <text>历史记录</text>
+         </view>
+
+         <view class="Linn_f">
+            <image src="https://s2.ax1x.com/2019/09/05/nuFyTK.png"></image>
+            <text>我的订阅</text>
+         </view>
+     
+     </view>
+
+
+
+     <view class="Linn_g">
+     
+           <image src="https://s2.ax1x.com/2019/09/05/nuFNYF.png"></image>
+     </view>
+
+
+     <view class="Linn_h">
+     
+           <text class="h_1">个人服务</text>
+           <view class="h_2"></view>
+           <view class="h_3">
+           
+              <view class="h_4">
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFWSH.png"></image>
+                    <text>我的求职</text>
+                 </view>
+
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFo0P.png"></image>
+                    <text>我的物品</text>
+                 </view>
+
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFImt.png"></image>
+                    <text>我的评价</text>
+                 </view>
+              
+              </view>
+           
+              <view class="h_4">
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFfld.png"></image>
+                    <text>我的财富</text>
+                 </view>
+
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFh6A.png"></image>
+                    <text>我的理财</text>
+                 </view>
+
+                 <view class="h_5">
+                    <image src="https://s2.ax1x.com/2019/09/05/nuFOpQ.png"></image>
+                    <text>个人设置</text>
+                 </view>
+              
+              </view>
+           
+           
+           </view>
+     
+     
+     </view>
+
+
+
+
+
+
+
+</view> -->
+<view class="Li" style="height:{{windowHeight}}px;">
+
+        <view class="Li_b" catchtap='To_one'>
+           <image src="{{viewone.img}}"></image>
+           <view class="Li_e">
+             <textarea>{{viewone.title}}</textarea>
+             <button >详细阅读</button>
+           </view>
+           
+        </view>
+        
+        <view class="Li_c" >
+           <view class="Li_d" catchtap='To_two'>
+              <image src="{{viewtwo.img}}"></image>
+              <view class="Li_f">
+                <textarea>{{viewtwo.title}}</textarea>
+                <button >详细阅读</button>
+              </view>
+              
+           </view>
+           <view class="Li_d" catchtap='To_three'>
+              <image src="{{viewthree.img}}"></image>
+              <view class="Li_f">
+                <textarea>{{viewthree.title}}</textarea>
+                <button >详细阅读</button>
+              </view>
+           </view>
+        </view>
+        
+        <view class="Li_b" catchtap='To_four'>
+          <image src="{{viewfour.img}}"></image>
+          <view class="Li_e">
+                <textarea>{{viewfour.title}}</textarea>
+                <button>详细阅读</button>
+          </view>
+        </view>
+</view>
+       

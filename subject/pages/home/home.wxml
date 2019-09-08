@@ -1,0 +1,111 @@
+<!--pages/home/home.wxml-->
+<import src="/pages/module/module.wxml"/>
+<view class="Linn" style="height:{{windowHeight}}px;">
+    <view class="Linn_a">
+     
+     <swiper autoplay indicator-dots indicator-active-color='#F0F0F0'>
+       <swiper-item>
+         <image data-index='0' src="https://s2.ax1x.com/2019/09/05/nuPVXt.jpg" catchtap='TOpublic'></image>
+       </swiper-item>
+       <swiper-item>
+         <image data-index='1' src="https://s2.ax1x.com/2019/09/05/nuPm0f.jpg" catchtap='TOwelfare'></image>
+       </swiper-item>
+       <swiper-item>
+         <image data-index='2' src="https://s2.ax1x.com/2019/09/05/nuCHkF.jpg" catchtap='TOadver'></image>
+       </swiper-item>
+     </swiper>
+     
+    </view>
+
+    <view class="Linn_b">
+        <!-- <view class="b_1">
+          <text>{{place}}</text>
+          <button>{{weather.city.data}}</button>
+        </view> -->
+
+        <view class="b_2" catchtap='test1' >
+           <view class="b_21"><text>{{weadata.city}}({{nowDate}})({{week}})</text></view>
+           <view class="b_22"></view>
+           <view class="b_23"><text>{{weadata.data[0].tem2}}-{{weadata.data[0].tem1}}</text></view>
+           <view class="b_24">
+             <text>{{weadata.data[0].wea}}</text>
+             <text>{{weadata.data[0].win}}</text>
+             <text  class='b_26'>{{weadata.data[0].win_speed}}</text>
+             <!-- <text>湿度：{{weadata.data[0].humidity}}</text> -->
+           </view>
+           <view class="b_25"><textarea>建议：{{weadata.data[0].index[3].desc}}</textarea></view>
+        </view>
+
+    </view>
+
+    <view class="Linn_c">
+       <!-- <view catchtap="TOcontent1">
+         <image src="/image/home/政府.png"></image>
+         <text>政府政策</text>
+       </view>
+       <view catchtap="TOcontent2">
+         <image src="/image/home/兼职.png"></image>
+         <text>个人兼职</text>
+       </view>
+       <view catchtap="TOcontent3">
+         <image src="/image/home/商家.png"></image>
+         <text>商家广告</text>
+       </view>
+       <view catchtap="TOcontent4">
+         <image src="/image/home/信息.png"></image>
+         <text>便民信息</text>
+       </view>
+       <view catchtap="TOcontent5">
+         <image src="/image/home/公益.png"></image>
+         <text>公益广告</text>
+       </view> -->
+       <view class="C_1">
+            <text>{{weadata.data[1].week}}</text>
+            <text class="c_1">{{weadata.data[1].tem}}</text>
+            <text class="c_2">{{weadata.data[1].wea}}</text>
+       </view>
+       <view class="C_1">
+            <text>{{weadata.data[2].week}}</text>
+            <text class="c_1">{{weadata.data[2].tem}}</text>
+            <text class="c_2">{{weadata.data[2].wea}}</text>
+       </view>
+       <view class="C_1">
+            <text>{{weadata.data[3].week}}</text>
+            <text class="c_1">{{weadata.data[3].tem}}</text>
+            <text class="c_2">{{weadata.data[3].wea}}</text>
+       </view>
+       <!-- <view class="C_1">
+            <text>{{weadata.data[3].week}}</text>
+            <text class="c_1">{{weadata.data[3].tem}}</text>
+            <text class="c_2">{{weadata.data[3].wea}}</text>
+       </view> -->
+    </view>
+
+    
+
+
+
+    <!-- <view class="Linn_d"> 
+        <block wx:for='{{listArr}}' wx:key='{{index}}'>
+           <view data-index='{{index}}'>
+               <template is="home_module"  data='{{...item}}'/>
+           </view>
+        </block>
+       
+    </view> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
