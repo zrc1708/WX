@@ -1,0 +1,57 @@
+
+<view class="Li" style="height:{{windowHeight}}px;">
+
+        <view class="Li_b" catchtap='To_one'>
+           <image src="{{viewone.img}}"></image>
+           <view class="Li_e">
+             <textarea>{{viewone.title}}</textarea>
+             <button >详细阅读</button>
+           </view>
+           
+        </view>
+
+        <view class="Li_b" catchtap='To_one'>
+           <image src="{{viewtwo.img}}"></image>
+           <view class="Li_e">
+             <textarea>{{viewtwo.title}}</textarea>
+             <button >详细阅读</button>
+           </view>
+           
+        </view>
+
+        <view class="Li_b" catchtap='To_one'>
+           <image src="{{viewthree.img}}"></image>
+           <view class="Li_e">
+             <textarea>{{viewthree.title}}</textarea>
+             <button >详细阅读</button>
+           </view>
+           
+        </view>
+        
+        <!-- <view class="Li_c" >
+           <view class="Li_d" catchtap='To_two'>
+              <image src="{{viewtwo.img}}"></image>
+              <view class="Li_f">
+                <textarea>{{viewtwo.title}}</textarea>
+                <button >详细阅读</button>
+              </view>
+              
+           </view>
+           <view class="Li_d" catchtap='To_three'>
+              <image src="{{viewthree.img}}"></image>
+              <view class="Li_f">
+                <textarea>{{viewthree.title}}</textarea>
+                <button >详细阅读</button>
+              </view>
+           </view>
+        </view> -->
+        
+        <view class="Li_b" catchtap='To_four'>
+          <image src="{{viewfour.img}}"></image>
+          <view class="Li_e">
+                <textarea>{{viewfour.title}}</textarea>
+                <button>详细阅读</button>
+          </view>
+        </view>
+</view>
+       

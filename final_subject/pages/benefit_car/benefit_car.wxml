@@ -1,0 +1,10 @@
+<import src="/pages/module/module.wxml"/>
+<view class="Linn" style="height:{{windowHeight}}px;"> 
+        <view class="Linn_a"><text>车辆车次</text></view>
+        <block wx:for='{{listArr}}' wx:key='{{index}}'>
+           <view data-index='{{index}}'>
+               <template is="benefit_module"  data='{{...item}}'/>
+           </view>
+        </block>
+       
+</view>

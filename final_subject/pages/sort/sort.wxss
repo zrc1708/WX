@@ -1,0 +1,101 @@
+.Linn{
+
+ width: 100%;
+ margin: 5px auto;
+}
+
+.Linn_a{
+
+ width: 100%;
+ display: flex;
+ /* border: 1px solid red; */
+ height:36%;
+}
+
+.Linn_b{
+
+ width: 86%;
+ height: 24%;
+ background-color: #9B30FF;
+ border-radius: 5%;
+ margin: 2% 0 2% 6%;
+ position: relative;
+}
+
+.Linn_b text{
+
+ font-size: 50rpx;
+ color: white;
+ position: absolute;
+ top: 41%;
+ left: 60%;
+
+}
+
+.Linn_b image{
+
+  width: 30%;
+  height: 62%;
+  position: absolute;
+  bottom: 22%;
+  left: 5%;
+}
+
+
+.Linn_d{
+ flex-basis: 40%;
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ /* border: 1px solid red; */
+ margin-left: 6%;
+ position: relative;
+ border-radius: 5%;
+ background-color: #3C98FC;
+}
+
+.Linn_d text{
+
+ font-size: 32rpx;
+ color: white;
+ position: absolute;
+ top: 6%;
+ left: 30%;
+}
+
+.Linn_d image{
+
+  width: 60%;
+  height: 50%;
+  margin: 30% auto;
+}
+
+.Linn_e{
+ flex-basis: 40%;
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ /* border: 1px solid red; */
+ margin-left: 6%;
+ position: relative;
+ border-radius: 5%;
+ background-color: #8F71FF;
+}
+
+.Linn_e text{
+
+ font-size: 32rpx;
+ color: white;
+ position: absolute;
+ top: 6%;
+ left: 30%;
+}
+
+.Linn_e image{
+
+  width: 60%;
+  height: 50%;
+  margin: 30% auto;
+}

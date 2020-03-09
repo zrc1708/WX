@@ -1,0 +1,9 @@
+<!--pages/MerchantAdv/Detail/Detail.wxml-->
+<view class='biggst'>
+  <video src='{{detailObj.url}}'></video>
+  <view class='xian'></view>
+  <view class='oo'>
+  <text class='one'>{{detailObj.title}}</text>
+  </view>
+  <text class='two'>简介：{{detailObj.detail}}</text>
+</view>

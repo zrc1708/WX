@@ -1,0 +1,10 @@
+<import src="/pages/module/module.wxml"/>
+<view class="Linn">      
+        <block wx:for='{{listArr}}' wx:key='{{index}}'>
+           <view catchtap="TOdetail" data-index='{{index}}'>
+               <template is="work_module"  data='{{...item}}'/>
+           </view>
+        </block>
+
+
+</view>

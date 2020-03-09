@@ -1,0 +1,7 @@
+<import src="/pages/MerchantAdv/Template/Template.wxml"/>
+
+<block wx:for='{{listArr}}' wx:key='{{index}}'>
+  <view catchtap='ToDetail' data-index='{{index}}'>
+    <template is='M_Adv'data='{{...item}}'/>
+  </view>
+</block>

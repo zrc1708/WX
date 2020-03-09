@@ -1,0 +1,272 @@
+/* pages/module/module.wxss */
+.Li{
+
+  width: 100%;
+  background-color: #EEE0E5;
+  border: 1rpx solid #EEE0E5;
+}
+
+.Li_a{
+
+ width: 100%;
+ height: 400rpx;
+
+
+}
+
+.Li_b{
+
+  width: 90%;
+  height: 250rpx;
+  display: flex;
+  border: 2rpx solid white;
+  border-radius: 4%;
+  margin: auto;
+  /* z-index: 999; */
+}
+
+.Li_b image{
+
+ width: 40%;
+ height: 100%;
+ border-radius: 4% 0 0 4%;
+ border-right: 2rpx solid #EED2EE;
+}
+
+.Li_b textarea{
+
+ width: 95%;
+ height: 60%;
+ font-size: 36rpx;
+ padding: 20rpx 0 0 20rpx;
+ /* border: 1px red solid; */
+}
+
+
+.Li_c{
+
+ width: 90%;
+ height: 280px;
+ display: flex;
+ /* border: 2px red solid; */
+ margin: 20rpx auto;
+}
+
+
+.Li_d{
+ flex-basis: 44%;
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ margin-left: 4%;
+ /* border: 2rpx solid red; */
+}
+
+.Li_d image{
+
+ width: 100%;
+ height: 40%;
+ border-radius: 4% 4% 0 0;
+ border-bottom: 2rpx solid #EED2EE;
+}
+
+.Li_d textarea{
+
+ width: 100%;
+ height: 60%;
+ font-size: 20px;
+ padding: 20rpx 0 0 5rpx;
+  /* border: 1px red solid;  */
+}
+
+.Li_e{
+ width: 60%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ background-color: white;
+ /* border: 1px red solid; */
+ border-radius: 0 4% 4% 0;
+}
+
+.Li_e button{
+
+ width: 48%;
+ height: 28%;
+ font-size: 28rpx;
+ border-radius: 30rpx;
+ border: 1px solid #1296DB;
+ background-color: #1296DB; 
+ color: white;
+ margin-right: 5%;
+}
+
+
+.Li_f{
+
+ width: 100%;
+ height: 60%;
+ background-color: white;
+ border-radius: 0 0 4% 4%;
+ position: relative;
+ /* border: 1px red solid;  */
+}
+
+.Li_f button{
+
+ width: 90%;
+ height: 22%;
+ font-size: 15px;
+ border-radius: 40rpx;
+ border: 1px solid #1296DB;
+ background-color: #1296DB; 
+ color: white;
+ position: absolute;
+ bottom: 1%;
+ left: 5%;
+}
+
+
+
+.Li_1{
+
+  border: 2px white solid;
+  width: 95%;
+  margin: 2% auto;
+  background-color: white;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.Li_2{
+
+ font-size: 42rpx;
+ /* color: red; */
+ width: 100%;
+ height: 30%;
+ margin: 2% auto;
+ /* border: 1px red solid; */
+ text-align: center;
+}
+
+
+
+.Li_3{
+
+ width: 100%;
+ height: 45%;
+ position: relative;
+ /* border: 1px red solid; */
+}
+
+.Li_3 textarea{
+
+ font-size: 28rpx;
+ color: #a9a8a8;
+ /* border: 1px red solid; */
+ width: 60%;
+ height: 100%;
+ margin-left: 10%;
+}
+
+.Li_3 .public_img{
+ position: absolute;
+ width: 194rpx;
+ height: 118rpx;
+ bottom: -15%;
+ right: 1%;
+ border: 1px #F9F9F9 solid;
+ border-radius: 20rpx;
+}
+
+.Li_A{
+
+ width: 90%;
+ height: 60rpx;
+ border: 2px white dashed;
+ margin: 2% auto;
+}
+
+
+
+.Li_B{
+
+ width: 100%;
+ height: 150rpx;
+ display: flex;
+ margin-top: 2%;
+ background-color: white;
+ border: 1px white solid;
+ border-radius: 10rpx;
+}
+
+.B_1{
+
+ height: 100%;
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+ justify-content: center;
+ /* text-align: center; */
+ margin-left: 3%;
+ font-size: 36rpx;
+ /* border: 1px red solid; */
+}
+
+
+.B_3{
+
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+  height: 40%;
+  /* border: 1px red solid; */
+}
+
+.B_4{
+
+ color: #F96647;
+
+}
+
+.B_5{
+
+ margin-left: 8%;
+
+}
+
+
+.B_6{
+
+ width: 30%;
+ height: 100%;
+ /* border: 1px red solid; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.B_6 button{
+
+ width: 130rpx;
+ height: 80rpx;
+ color: white;
+ font-size: 36rpx;
+ text-align: center;
+ background-color: #F96647;
+}
+
+.yhc_A{
+  
+ width: 100%;
+ margin-bottom: 50rpx;
+}
+
+.A_1{
+
+ width: 100%;
+
+}

@@ -1,0 +1,27 @@
+video{
+  width: 100%;
+}
+.xian{
+  border: 1px solid #d4d3d3;
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.oo{
+  justify-content: center; 
+  text-align: center;
+}
+.one{
+  display: inline-block;
+  font-size: 55rpx;
+}
+.two{
+  text-indent: 64rpx;  
+  font-size: 36rpx;
+  margin-top: 4%;
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+  line-height: 60rpx;
+}

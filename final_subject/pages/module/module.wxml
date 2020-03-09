@@ -1,0 +1,100 @@
+<!--pages/module/module.wxml-->
+<template name="home_module">
+
+   <view class="Li">
+
+        <view class="Li_b">
+           <image src="{{img1}}"></image>
+           <view class="Li_e">
+             <textarea>{{content1}}</textarea>
+             <button>详细阅读</button>
+           </view>
+           
+        </view>
+        
+        <view class="Li_c">
+           <view class="Li_d">
+              <image src="{{img2}}"></image>
+              <view class="Li_f">
+                <textarea>{{content2}}</textarea>
+                <button>详细阅读</button>
+              </view>
+              
+           </view>
+           <view class="Li_d">
+              <image src="{{img3}}"></image>
+              <view class="Li_f">
+                <textarea>{{content3}}</textarea>
+                <button>详细阅读</button>
+              </view>
+              
+           </view>
+        </view>
+        
+        <view class="Li_b">
+          <image src="{{img4}}"></image>
+          <view class="Li_e">
+                <textarea>{{content4}}</textarea>
+                <button>详细阅读</button>
+          </view>
+          
+        </view>
+   </view>
+
+</template>
+
+
+
+
+
+
+<template name="public_module">
+
+    <view class="Li_1">
+    
+        <view class="Li_2"><text>{{publicTitle}}</text></view>
+        <view class="Li_3">
+            <textarea>{{publicText}}</textarea>
+            <image class="public_img" src="{{image}}"></image>
+        </view>
+    </view>
+
+</template>
+
+
+
+
+<template name="benefit_module">
+        <view class="Li_A"><text>{{content}}</text></view>
+</template>
+
+<template name="benefit2_module">
+        <view class="Li_A"><text>{{content2}}</text></view>
+</template>
+
+
+<template name="work_module">
+        <view class="Li_B">
+           <view class="B_1">
+              <text class="B_2">{{workTitle}}</text>
+              <view class="B_3">
+                <text class="B_4">{{workMoney}}</text>
+                <text class="B_5">{{workPostion}}</text>
+              </view>
+           </view>
+        
+           <view class="B_6"><button>申请</button></view>
+        
+        </view>
+</template>
+
+<template name="welfare_module">
+      <view class="yhc_A">
+        <image class="A_1" src="{{welfareimage}}"></image>
+        <view class="A_5">
+          <view><text class="A_2">{{welfaretitle}}</text></view>
+          <view><text class="A_3">{{welfareintroduce}}</text></view>
+          <view><text class="A_4">{{welfarelocation}}</text></view>
+        </view>
+      </view>
+</template>
