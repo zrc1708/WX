@@ -1,7 +1,10 @@
 // pages/rili/rili.js
 Page({
-
   data: {
+    // 控制弹窗的显示
+    dialogShow: false,
+    // 弹窗的按钮
+    oneButton: [{ text: '确定' }],
     // 今日的数据
     today:{},
     // 当月一共多少天
@@ -10,6 +13,8 @@ Page({
     firstDayWeek:0,
     // 今天的日期，不会改变，用于进行判断给当前日期添加样式
     basedate:{},
+    // 存储当前月份的特殊日期
+    holiday:[],
     weekList: ['日','星期一', '星期二', '星期三', '星期四', '星期五', '六']
   },
 
@@ -28,6 +33,7 @@ Page({
     this.setData({
       firstDayWeek: fw.week
     })
+    this.getjieri()
   },
   // 获取指定日期的信息
   getOneDay: function (month,day,year) {
@@ -90,6 +96,8 @@ Page({
     this.setData({
       firstDayWeek: fw.week
     })
+    // 获取特殊日期
+    this.getjieri()
   },
   // 右侧按钮
   btnright:function(){
@@ -116,5 +124,34 @@ Page({
     this.setData({
       firstDayWeek: fw.week
     })
-  }
+    // 获取特殊日期
+    this.getjieri()
+  },
+  getjieri:function(){
+    var that = this
+    wx.request({
+      url: `http://timor.tech/api/holiday/year/${this.data.today.year}-${this.data.today.month}`, 
+      header: { 
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        // console.log(res.data)
+        that.setData({
+          holiday:res.data.holiday
+        })
+      }
+    })
+  },
+  // 开启弹窗
+  openConfirm: function () {
+    this.setData({
+      dialogShow: true
+    })
+  },
+  // 弹窗按钮的点击事件
+  tapDialogButton(e) {
+    this.setData({
+      dialogShow: false
+    })
+  },
 })

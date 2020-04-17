@@ -4,11 +4,27 @@
   justify-content: center;
   align-items: center;
 }
-.control text{
+.control view:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control view:nth-child(1) text{
   color: black;
   background-color: #eeeeee;
   display: block;
   width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 20rpx;
+}
+.control view:nth-child(2){
+  color: black;
+  background-color: #eeeeee;
+  display: block;
+  width: 200rpx;
   height: 60rpx;
   line-height: 60rpx;
   text-align: center;

@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/rili/rili"
+    "pages/rili/rili",
+    "pages/components/dialog/dialog"
   ],
   "window": {
     "backgroundTextStyle": "light",
