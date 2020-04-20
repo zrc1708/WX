@@ -1,0 +1,131 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background-color: #000
+}
+.root{
+  display: flex;
+  flex-direction: column;
+}
+/* 顶部导航栏 */
+.tabs{
+  display: flex;
+  background-color: pink;
+}
+.tabs .item{
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #222;
+  color: #ccc;
+  padding: 10px 0;
+}
+.tabs .active{
+  color: #fff;
+  border-bottom: 4rpx solid red;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+/* 轮播图 */
+.banner{
+  width: 100%;
+  height: 100%;
+}
+/* 中间按钮 */
+.content .middle{
+  display: flex;
+  padding-top: 10rpx;
+}
+.content .middle .middle_button{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center
+}
+.content .middle .middle_icon{
+  width: 180rpx;
+  height: 180rpx;
+}
+.content .middle .middle_text{
+  color: white;
+  font-size: 26rpx;
+}
+/* 推荐歌单 */
+.content .tuijian{
+  color: white;
+  font-size: 27rpx;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+.recommend {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommend .recommod_item{
+  flex: 1;
+  width: 33.333%;
+}
+.recommend .recommod_item .recommend_icon{
+  width: 230rpx;
+  height: 230rpx;
+  display: block;
+  margin:0 auto;
+}
+.recommend .recommod_item .recommend_text{
+  color: white;
+  font-size: 24rpx;
+  display: block;
+  text-align: center;
+  padding-bottom: 15rpx;
+}
+/* 底部播放器 */
+.player{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 120rpx;
+  background: #222;
+}
+.player .play_img{
+  padding: 8rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.player .title{
+  display: flex;
+  flex: 1;
+  margin-left: 10rpx;
+  padding-top: 10rpx;
+  flex-direction: column;
+}
+.player .title .title_name{
+  color: white;
+  font-size: 30rpx;
+}
+.player .title .title_editor{
+  color: white;
+  font-size: 22rpx;
+}
+.player .music_player{
+  display: flex;
+  align-items: center;
+}
+.player .music_player .ic_list{
+  width: 50rpx;
+  height: 50rpx;
+}
+.player .music_player .ic_play{
+  margin-left: 10px;
+  width: 60rpx;
+  height: 60rpx;
+}
+.player .music_player .ic_pause{
+  margin-left: 10px;
+  width: 50rpx;
+  height: 50rpx;
+}

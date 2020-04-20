@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class="root">
+  <view class="tabs">
+    <text class="item active">个性推荐</text>
+    <text class="item">歌单</text>
+    <text class="item">个性推荐</text>
+    <text class="item">排行榜</text>
+  </view>
+  <scroll-view class="content" scroll-y style="height:{{(windowheight-playheight-tabheight)+'px'}}">
+  <!-- 轮播图 -->
+    <!-- <image src="../../image/banner.jpg" class="banner" style="height:{{bannerheight}}" bindload="imageLoad"></image> -->
+    <swiper indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+        <block wx:for="{{background}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}" class="banner" ></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    <!-- 中间按钮 -->
+    <view class="middle">
+      <view class="middle_button">
+        <image src="../../image/ic_jingxuan.png" class="middle_icon"></image>
+        <text class="middle_text">私人FM</text>
+      </view>
+      <view class="middle_button">
+        <image src="../../image/ic_tuijian.png" class="middle_icon"></image>
+        <text class="middle_text">每日歌曲推荐</text>
+      </view>
+      <view class="middle_button">
+        <image src="../../image/ic_number.png" class="middle_icon"></image>
+        <text class="middle_text">云音乐新歌榜</text>
+      </view>
+    </view>
+    <!-- 推荐歌单 -->
+    <text class="tuijian">推荐歌单</text>
+    <view class="recommend">
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+      <view class="recommod_item">
+        <image src="../../image/zhuanji_bofang.jpg" class="recommend_icon"></image>
+        <text class="recommend_text">哪些年-林俊杰</text>
+      </view>
+    </view>
+  </scroll-view> 
+  <!-- 底部播放器 -->
+  <view class="player">
+    <image class="play_img" src="../../image/zhuanji.jpg" mode="widthFix"></image>
+    <view class="title">
+      <text class="title_name">第几个100天</text>
+      <text class="title_editor">林俊杰</text>
+    </view>
+    <view class="music_player">
+      <image class="ic_list" src="../../image/ic_list.png"></image>
+      <image class="ic_play" src="../../image/ic_play.png"></image>
+      <image class="ic_pause" src="../../image/ic_pause.png"></image>
+    </view>
+  </view>
+</view>
