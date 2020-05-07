@@ -1,0 +1,43 @@
+/* tabBar总体 */
+.tab-bar{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  background-color: #eeeeee;
+}
+/* tabBar内容快 */
+.tab-bar-index{
+  display: flex;
+  flex: 1;
+  font-size: 30rpx;
+  height: 100%;
+  z-index: 1;
+}
+/* 图标字体结合内容快 */
+.tab-bar-icon{
+  width: 50%;
+  height: 45px;
+  margin: 10rpx auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+  border-radius: 15%;
+}
+/* 内容快图片 */
+.tab-bar-img{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 auto;
+}
+/* 内容快挤位置 */
+.tab-bar-tmp{
+  width: 100%;
+  height: 7rpx;
+}
+/* 内容快文字 */
+.tab-bar-text{
+  width: 80rpx;
+  text-align: center;
+  font-size: 24rpx;
+  margin: 0 auto;
+}
