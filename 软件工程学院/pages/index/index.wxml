@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 遮罩 -->
+  <view class="mask {{showmask}}"></view>
+  <!-- 顶部导航 -->
+  <view class="header">
+    <image src="../../image/logo.png"></image>
+    <view bindtap="showheader"></view>
+  </view>
+  <!-- 顶部导航的展开菜单 -->
+  <view class="header_main {{control}}">
+    <view class="logoLine">
+      <image src="../../image/logo.png"></image> 
+      <view class="close" bindtap="closeHeader"></view>   
+    </view>
+    <view class="tableLine">
+      <view bindtap="gotopage" data-url="../rili/rili">金科校历</view>
+      <view bindtap="gotopage" data-url="../video/video">金科视屏</view>
+      <view bindtap="gotopage" data-url="../map/map">金科地图</view>
+      <view>金科概况</view>
+      <view>党建工作</view>
+      <view>人才培养</view>
+    </view>  
+  </view>
+  <!-- 轮播图 -->
+  <swiper indicator-dots indicator-color="white" autoplay>
+      <swiper-item>
+        <image src="../../image/banner.jpg" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../image/banner1.jpg" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../image/banner2.jpg" mode="aspectFill"></image>
+      </swiper-item>
+  </swiper>
+  <!-- 内容 -->
+  <view class="title">金科·要闻</view>
+  <view class="biggest">
+    <image src="../../image/bignews.jpg" ></image>
+    <text>在线教学守阵地，在家工作抗疫情</text>
+  </view>
+  <view class="content">
+    <view class="content_children">软件工程学院举办省级三好学生、优秀学生干部和先进班集体线上评审活动</view>
+    <view class="content_children">软件工程学院青协志愿者助力牛首山登山比赛</view>
+    <view class="content_children">金陵科技学院荣获中国智能交通协会科学技术奖三等奖</view>
+    <view class="content_children">校党委第二巡察组巡察软件学院、网安学院党委工作动员会召开</view>
+    <view class="content_children">软件工程学院、网络安全学院举行“书香金秋-借阅之星”系列活动</view>
+    <view class="content_children">软件工程学院、网络安全学院举办“教授面对面”活动</view>
+    <view class="content_children">软件工程学院、网络安全学院举办诚信考试动员大会</view>
+    <view class="content_children">软件工程学院、网络安全学院举办网络信息安全专业教育讲座</view>
+  </view>
+</view>

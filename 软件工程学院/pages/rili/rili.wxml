@@ -1,0 +1,25 @@
+<!--pages/rili/rili.wxml-->
+<view class="control">
+  <view>
+    <text bindtap="btnleft">{{'<'}}</text> 
+    {{today.year}}-{{today.month}}
+    <text bindtap="btnright">{{'>'}}</text>
+  </view>
+  <view bindtap="openConfirm">特殊日期</view>
+</view>
+<!-- 日历 -->
+<view class="box">
+  <!-- 日历的头部 -->
+  <view class="content header" wx:for="{{weekList}}" wx:for-item="week" wx:key='index'>{{week}}</view>
+  <!-- 日期前的空日期部分 -->
+  <view class="content" wx:for="{{firstDayWeek}}" wx:key='index'></view>
+  <!-- 日期部分 -->
+  <view  wx:for="{{days}}" wx:for-item="day" wx:key='index'
+  class="content {{day+1 === basedate.day && basedate.month === today.month&& basedate.year === today.year?'selected':''}}">{{day+1}}</view>
+</view>
+<!-- 特殊日期弹窗 -->
+<mp-dialog title="当月特殊日期" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{oneButton}}">
+  <view wx:for="{{holiday}}" wx:for-item="day" wx:key='index'>
+    <text>{{day.date}}   {{day.name}}</text>
+  </view>
+</mp-dialog>

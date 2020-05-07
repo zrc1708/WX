@@ -1,0 +1,54 @@
+/* pages/rili/rili.wxss */
+.control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control view:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control view:nth-child(1) text{
+  color: black;
+  background-color: #eeeeee;
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 20rpx;
+}
+.control view:nth-child(2){
+  color: black;
+  background-color: #eeeeee;
+  display: block;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 20rpx;
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  margin: 0 auto;
+  width: 575rpx;
+}
+.content{
+  width: 80rpx;
+  text-align: center;
+  border: 1px solid black;
+  margin-left: -1rpx;
+  margin-top: -1rpx;
+}
+.header{
+  margin-top: 0;
+}
+.selected{
+  background-color:rgba(0, 204, 255, 0.281);
+}
