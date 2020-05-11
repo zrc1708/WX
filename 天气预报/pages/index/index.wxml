@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 今日天气 -->
+  <view class="today">
+    <view class="today_city">{{weacity.city}}</view>
+    <view class="today_tem">
+      {{weadata[0].tem}}
+      <text class="today_c">℃</text>
+      <text class="today_wea">{{weadata[0].tem2}}~{{weadata[0].tem1}}</text>
+      <text class="today_wea2">{{weadata[0].wea}}</text>
+    </view>
+    <view class="today_air">空气质量：{{weadata[0].air_level}}</view>
+    <view class="today_airtips">{{weadata[0].air_tips}}</view>
+    <view class="box">
+      <view wx:for="{{weadata[0].index}}" wx:for-item="item" wx:key="index">
+        <view>{{item.title}}</view>
+        <view>{{item.level}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 七日天气 -->
+  <view class="day7">
+    <view class="day7_title">7日天气预报</view>
+    <view class="day7_wea" wx:for="{{weadata}}" wx:for-item="item" wx:key="index">
+      <view>{{item.date}}</view>    
+      <view>{{item.week}}</view>    
+      <view>{{item.wea}}</view>    
+      <view>{{item.tem2}}~{{item.tem1}}</view>    
+    </view>
+  </view>
+</view> 

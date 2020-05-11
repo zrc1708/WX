@@ -1,0 +1,82 @@
+/**index.wxss**/
+page{
+  background: linear-gradient(#52b3f7,#026ebb);
+  color: white;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+/* 今日天气 */
+.today{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 40rpx;
+}
+.today_city{
+  font-size: 40rpx;
+}
+.today_tem{
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 130rpx;
+  text-align: center;
+  position: relative;
+}
+.today_c{
+  position: absolute;
+  font-size: 35rpx;
+  top: 0;
+  line-height: 65rpx;
+}
+.today_wea{
+  font-size: 30rpx;
+  line-height: 35rpx;
+  position: absolute;
+  bottom: 53rpx;
+  transform: translateX(40rpx);
+}
+.today_wea2{
+  font-size: 30rpx;
+  line-height: 35rpx;
+  position: absolute;
+  transform: translateX(40rpx);
+  bottom: 17rpx;
+}
+.today_air{
+  text-align: center;
+}
+.today_airtips{
+  text-align: center;
+  color: #a6d3f5;
+  font-size: 25rpx;
+}
+.box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box >view{
+  width: 32%;
+  border: 1rpx solid #67aee2;
+  background-color: #3e98d8;
+  text-align: center;
+  font-size: 25rpx;
+  border-radius: 5rpx;
+  margin-top: 8rpx;
+  padding: 3rpx 0;
+}
+/* 七日天气预报 */
+.day7{
+  padding: 0 40rpx;
+}
+.day7_title{
+  border-bottom: 4rpx solid #67aee2;
+  line-height: 80rpx;
+  font-size: 41rpx;
+}
+.day7_wea{
+  display: grid;
+  grid-template-columns: 120rpx 120rpx 1fr 120rpx;
+  margin: 20rpx 0;
+}
