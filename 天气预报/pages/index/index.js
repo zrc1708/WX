@@ -22,6 +22,8 @@ Page({
               res.data.data[0].index[index].level = '中'
             }
           }
+          // 本条数据接口容易失效，故写死
+          res.data.data[0].index[1].title = '健身指数'
           that.setData({
             weacity: res.data, 
             weadata: res.data.data
