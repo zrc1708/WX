@@ -1,8 +1,9 @@
 <template>
   <div class="indexContainer">
-    <img class="index_img" src="../../../static/images/index/cart.jpg" alt="">
-    <p class="userName">Hello mpvue</p>
-    <div class="goStudy">
+    <img v-if="isShow" class="index_img" :src="userInfo.avatarUrl" alt="">
+    <Button class="btn" v-else open-type="getUserInfo" @getuserinfo="getUserInfo">获取用户信息</Button>
+    <p class="userName">Hello {{userInfo.nickName}}</p>
+    <div @tap="toDetail" class="goStudy">
       <p>开启小程序之旅</p>
     </div>
   </div>
@@ -13,9 +14,41 @@
 export default {
   data () {
     return {
-      
+      userInfo:{},
+      isShow:false,
     }
   },
+  beforeMount(){
+    // 获取用户的登录信息
+    this.handleGetUserInfo()
+  },
+  methods:{
+    // 获取用户登录信息
+    handleGetUserInfo(){
+      wx.getUserInfo({
+        success: (data) => {
+          this.userInfo = data.userInfo
+          this.isShow = true
+        },
+        fail:()=>{
+          console.log('获取失败')
+        }
+      })
+    },
+    getUserInfo(data){
+      // 判断用户是否授权
+      console.log(data)
+      if(data.mp.detail.rawData){
+        // 用户已经授权
+        this.handleGetUserInfo()
+      }
+    },
+    toDetail(){
+      wx.navigateTo({
+        url:'/pages/list/main'
+      })
+    }
+  }
 }
 </script>
 
@@ -48,5 +81,15 @@ export default {
     line-height: 80rpx;
     text-align: center;
     border-radius: 10rpx;
+  }
+
+  .btn{
+    width: 300rpx;
+    height: 300rpx;
+    border-radius: 150rpx;
+    margin: 100rpx 0;
+    line-height: 300rpx;
+    text-align: center;
+    font-size: 26rpx;
   }
 </style>
