@@ -44,7 +44,7 @@ export default {
       }
     },
     toDetail(){
-      wx.navigateTo({
+      wx.switchTab({
         url:'/pages/list/main'
       })
     }

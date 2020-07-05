@@ -1,5 +1,5 @@
 <template>
-  <div class="tmpContainer">
+  <div @tap="toDetail" class="tmpContainer">
     <div class="avatar_date">
       <img :src="item.avatar" alt="">
       <span>{{item.date}}</span>
@@ -28,7 +28,12 @@
     beforeMount(){
     },
     methods:{
-      
+      // 跳转到详情页
+      toDetail(){
+        wx.navigateTo({
+          url:"/pages/detail/main?index="+this.index,
+        })
+      }
     }
   }
 </script>
