@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="moviesContainer" v-for="(item, index) in moviesArr" :key="index">
+    <div @tap="toMoviesDetail(index)" class="moviesContainer" v-for="(item, index) in moviesArr" :key="index">
         <img class="movies_img" :src="item.images.large" alt="">
         <div class="movies_info">
             <p class="movies_name">{{item.title}}</p>
@@ -26,6 +26,7 @@
         .then(response => {
             let moviesArr = response.data.subjects
             this.moviesArr = moviesArr
+            this.$store.dispatch('getMoviesArr',moviesArr)
             console.log(moviesArr)
         })
         .catch(function (error) {
@@ -39,7 +40,13 @@
      
     },
     methods:{
-        
+        toMoviesDetail(index){
+            wx.navigateTo({
+                url: "/pages/movieDetail/main?index="+index,
+                
+            });
+              
+        }
     }
   }
 </script>
