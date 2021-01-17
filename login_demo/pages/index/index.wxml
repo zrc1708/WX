@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <text>{{userInfo.nickName}}</text>
+  <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">登录</button>
+</view>
