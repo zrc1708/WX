@@ -3,3 +3,7 @@
 page{
   height: 100%;
 }
+.container{
+  height: calc(100% - 48px - env(safe-area-inset-bottom));
+  overflow: auto;
+}

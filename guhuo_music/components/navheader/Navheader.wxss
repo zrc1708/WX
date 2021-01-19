@@ -4,6 +4,9 @@
   line-height: 80rpx;
   color: #666;
 }
+.header .nav{
+  font-size: 24rpx;
+}
 .header .more{
   float: right;
   border: 1rpx solid #333;
