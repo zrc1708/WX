@@ -1,2 +1,52 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="container videoContainer">
+  <!-- 头部区域 -->
+  <view class="header">
+    <image src="/static/images/video/video.jpg"></image>
+    <view class="search" bindtap="toSearch">搜索音乐</view>
+    <image src="/static/images/logo.png"></image>
+  </view>
+  <!-- 导航 -->
+  <scroll-view
+      scroll-x
+      class="navScroll"
+      enable-flex
+      scroll-into-view="{{'scroll' + navId}}"
+      scroll-with-animation>
+    <view id="{{'scroll' + item.id}}" class="navItem" wx:for="{{videoGroupList}}" wx:key="id">
+      <view class="navContent {{navId == item.id?'active': ''}}" bindtap="changeNav" id="{{item.id}}" data-id="{{item.id}}">
+        {{item.name}}
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 视屏列表 -->
+  <scroll-view scroll-y class="videoScroll">
+    <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
+      <view class="footer">
+        <image class="avatar" src="{{item.data.creator.avatarUrl}}"></image>
+        <text class="nickName">{{item.data.creator.nickname}}</text>
+        <view class="comments_praised">
+          <text class="item">
+            <text class="iconfont icon-buoumaotubiao15"></text>
+            <text class="count">{{item.data.praisedCount}}</text>
+          </text>
+          <text class="item">
+            <text class="iconfont icon-pinglun1"></text>
+            <text class="count">{{item.data.commentCount}}</text>
+          </text>
+          <button open-type="share" class="item btn">
+            <text class="iconfont icon-gengduo"></text>
+          </button>
+        </view>
+      </view>
+      <video src="{{item.data.urlInfo.url}}" bindplay="handlePlay" poster="{{item.data.coverUrl}}" 
+            id="{{item.data.vid}}" class="common" wx:if="{{item.data.vid == videoId}}"></video>
+      
+      <!-- <video class="common" poster="{{item.data.coverUrl}}" src="http://vodkgeyttp9c.vod.126.net/vodkgeyttp8/68sKFbGS_1328070069_hd.mp4?ts=1611155274&rid=47115DC667964F5C42BDE925D7219E80&rl=3&rs=VyTTbQWOUMfNWjYITdhdQfmPzboSIDne&sign=e17c81a34d223ea4e315b2d2987c7fdb&ext=NnR5gMvHcZNcbCz592mDGUGuDOFN18isir07K1EOfL2fJhniMCDvPuvdcCIxDVwJbglfcKJcRIDkbWJolIpv1VnlK0AVNlwHhQWuwVHGBXuyX%2FQa6mlsqI%2B5GW2bm4nMVDjG%2FHleVos%2FXenVB%2Bba3fdbxaFxrXwb2rvX0oToJ2ymD0ZVacZXMjS9fQih6Umnr2wWUL1ERhKNgzyN34n55ELRAoA8iNbdllZYpgIXgpc4ntd6zSUOVzM200LZHyMP" bindplay="handlePlay" id="{{item.data.vid}}" 
+            wx:if="{{item.data.vid == videoId}}"></video> -->
+      <image class="common" src="{{item.data.coverUrl}}" bindtap="handlePlay" 
+              id="{{item.data.vid}}" data-index="{{index}}" wx:else></image>
+      <view class="content">{{item.data.title}}</view>
+    </view>
+  </scroll-view>
+</view>

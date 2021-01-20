@@ -219,7 +219,11 @@
 /* 最近播放记录 */
 .recentScroll {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   height: 200rpx;
+  padding: 0 20rpx;
+  overflow: hidden;
 }
 .recentItem {
   margin-right: 20rpx;
