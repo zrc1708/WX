@@ -42,6 +42,9 @@
 }
 
 /* 视屏列表 */
+.videoScroll{
+  height: calc(100% - 120rpx);
+}
 .videoItem{
   padding: 0 3%;
 }

@@ -20,7 +20,11 @@
     </view>
   </scroll-view>
   <!-- 视屏列表 -->
-  <scroll-view scroll-y class="videoScroll">
+  <scroll-view scroll-y class="videoScroll" 
+    refresher-enabled
+    refresher-triggered="{{isTriggered}}"
+    bindrefresherrefresh="handleRefresher"
+    bindscrolltolower="handleToLower">
     <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
       <view class="footer">
         <image class="avatar" src="{{item.data.creator.avatarUrl}}"></image>
@@ -39,11 +43,15 @@
           </button>
         </view>
       </view>
-      <video src="{{item.data.urlInfo.url}}" bindplay="handlePlay" poster="{{item.data.coverUrl}}" 
-            id="{{item.data.vid}}" class="common" wx:if="{{item.data.vid == videoId}}"></video>
-      
-      <!-- <video class="common" poster="{{item.data.coverUrl}}" src="http://vodkgeyttp9c.vod.126.net/vodkgeyttp8/68sKFbGS_1328070069_hd.mp4?ts=1611155274&rid=47115DC667964F5C42BDE925D7219E80&rl=3&rs=VyTTbQWOUMfNWjYITdhdQfmPzboSIDne&sign=e17c81a34d223ea4e315b2d2987c7fdb&ext=NnR5gMvHcZNcbCz592mDGUGuDOFN18isir07K1EOfL2fJhniMCDvPuvdcCIxDVwJbglfcKJcRIDkbWJolIpv1VnlK0AVNlwHhQWuwVHGBXuyX%2FQa6mlsqI%2B5GW2bm4nMVDjG%2FHleVos%2FXenVB%2Bba3fdbxaFxrXwb2rvX0oToJ2ymD0ZVacZXMjS9fQih6Umnr2wWUL1ERhKNgzyN34n55ELRAoA8iNbdllZYpgIXgpc4ntd6zSUOVzM200LZHyMP" bindplay="handlePlay" id="{{item.data.vid}}" 
-            wx:if="{{item.data.vid == videoId}}"></video> -->
+      <video src="{{item.data.urlInfo.url}}" 
+            bindplay="handlePlay" 
+            bindtimeupdate="handleTimeUpdate"
+            bindended="handleEnded"
+            poster="{{item.data.coverUrl}}" 
+            id="{{item.data.vid}}" 
+            class="common" 
+            wx:if="{{item.data.vid == videoId}}" 
+            object-fit="fill"></video>
       <image class="common" src="{{item.data.coverUrl}}" bindtap="handlePlay" 
               id="{{item.data.vid}}" data-index="{{index}}" wx:else></image>
       <view class="content">{{item.data.title}}</view>
