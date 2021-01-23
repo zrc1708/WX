@@ -50,6 +50,11 @@ Page({
     // 获取视频列表数据
     this.getVideoList(this.data.navId);
   },
+  toSearch(){
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   // 获取视频列表数据
   async getVideoList(navId){
     if(!navId){ // 判断navId为空串的情况

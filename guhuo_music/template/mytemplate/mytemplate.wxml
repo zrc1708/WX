@@ -1,0 +1,7 @@
+<template name="msgItem">
+  <view>
+      <view class="title">模板</view>
+      <view class="userInfo">{{username}}</view>
+      <view class="userInfo">{{userage}}</view>
+  </view>
+</template>

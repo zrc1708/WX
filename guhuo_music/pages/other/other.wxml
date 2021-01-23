@@ -1,0 +1,6 @@
+<import src="/template/mytemplate/mytemplate.wxml"/>
+
+<view class="otherContainer">
+  <view>测试模板</view>
+  <template is="msgItem" data="{{...person}}"/>
+</view>

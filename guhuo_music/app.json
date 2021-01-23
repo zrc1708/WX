@@ -1,13 +1,17 @@
 {
   "pages": [
+    "pages/other/other",
+    "pages/index/index",
+    "pages/search/search",
     "pages/recommend/recommend",
     "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
-    "pages/login/login",
-    "pages/index/index"
+    "pages/login/login"
   ],
-  "requiredBackgroundModes":["audio"],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
     "navigationBarTitleText": "姑获音乐",

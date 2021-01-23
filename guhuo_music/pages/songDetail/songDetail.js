@@ -48,6 +48,15 @@ Page({
     this.backgroundAudioManger.onStop(()=>{
       this.changePlayState(false)
     })
+    this.backgroundAudioManger.onEnded(()=>{
+      // 自动切换至下一首音乐，并且自动播放
+      PubSub.publish('switchType', 'next')
+      // 将实时进度条的长度还原成 0；时间还原成 0；
+      this.setData({
+        currentWidth: 0,
+        currentTime: '00:00'
+      })
+    })
     this.backgroundAudioManger.onTimeUpdate(()=>{
       // 格式化实时的播放时间
       let currentTime = moment(this.backgroundAudioManger.currentTime * 1000).format('mm:ss')
