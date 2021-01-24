@@ -1,10 +1,7 @@
 {
   "pages": [
-    "pages/other/other",
     "pages/index/index",
     "pages/search/search",
-    "pages/recommend/recommend",
-    "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
     "pages/login/login"
@@ -44,5 +41,26 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "subpackages": [
+    {
+      "root": "songPackage",
+      "pages": [
+        "pages/recommend/recommend",
+        "pages/songDetail/songDetail"
+      ]
+    },
+    {
+      "root": "otherPackage",
+      "name": "other",
+      "pages": [
+        "pages/other/other"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "packages": ["songPackage", "other"]
+    }
+  }
 }

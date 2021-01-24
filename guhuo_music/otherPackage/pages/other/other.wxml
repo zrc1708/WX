@@ -3,4 +3,6 @@
 <view class="otherContainer">
   <view>测试模板</view>
   <template is="msgItem" data="{{...person}}"/>
+  <!-- 测试获取用户唯一标识openId -->
+  <button bindtap="handleGetOpenId">测试获取用户唯一标识openId</button>
 </view>

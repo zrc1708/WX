@@ -63,7 +63,12 @@ Page({
   },
   roRecommend(){
     wx.navigateTo({
-      url: '/pages/recommend/recommend',
+      url: '/songPackage/pages/recommend/recommend',
+    })
+  },
+  toOther(){
+    wx.navigateTo({
+      url: '/otherPackage/pages/other/other',
     })
   }
 })

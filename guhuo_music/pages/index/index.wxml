@@ -13,9 +13,9 @@
       <text class="iconfont icon-meirituijian"></text>
       <text>每日推荐</text>
     </view>
-    <view class="nav-item">
+    <view class="nav-item" bindtap="toOther">
       <text class="iconfont icon-gedan1"></text>
-      <text>歌单</text>
+      <text>其他</text>
     </view>
     <view class="nav-item">
       <text class="iconfont icon-icon-ranking"></text>
