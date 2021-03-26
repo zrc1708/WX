@@ -1,0 +1,15 @@
+<view class="musiclist-media-container">
+  <view class="imgbox">
+    <image class="musicImg" src="{{imgUrl}}"></image>
+    <text class="authortext">{{musicLisText}}</text>
+  </view>
+  <view class="three-music">
+    <view class="music-item" 
+      wx:for="{{musicList}}" 
+      wx:for-index="index"
+      wx:for-item="item"
+      wx:key="index">
+      <text>{{index+1}}.{{item.name}}-{{item.author}}</text>
+    </view>
+  </view>
+</view>

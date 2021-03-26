@@ -1,0 +1,7 @@
+@import './static/iconfont.wxss';
+
+.container{
+  padding: 0 10rpx;
+  display: flex;
+  flex-direction: column;
+}

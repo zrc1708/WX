@@ -1,0 +1,57 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  font-size: 30rpx;
+}
+.header-userbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userImg{
+  background-color: #d2d2d2;
+  color: #f1f1f1;
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username{
+  margin-left: 20rpx;
+  color: #a7a7a7;
+}
+.loginnow{
+  border: 1rpx solid #a7a7a7;
+  color: #a7a7a7;
+  border-radius: 30rpx;
+  padding: 5rpx 15rpx;
+}
+.inputbox{
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 70rpx;
+  border-radius: 35rpx;
+  color: #a7a7a7;
+}
+.inputbox>.iconfont{
+  line-height: 70rpx;
+  margin: 0 20rpx;
+}
+.inputbox>input{
+  flex: 1;
+  padding-right: 20rpx;
+}
+.imgbox{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.imgbox>image{
+  width: 100%;
+  display: block;
+}
+

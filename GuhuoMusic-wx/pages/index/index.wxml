@@ -1,0 +1,26 @@
+<view>
+  <view class="container">
+    <!-- 用户登录相关 -->
+    <view class="header">
+      <view class="header-userbox">
+        <icon class="iconfont icon-yonghu userImg"></icon>
+        <text class="username">未登录</text>
+      </view>
+      <view class="loginnow">立即登录</view>
+    </view>
+    <!-- 搜索 -->
+    <view class="inputbox">
+      <icon class="iconfont icon-sousuo"></icon>
+      <input type="text" placeholder="搜索歌曲"/>
+    </view>
+    <!-- 音乐口味广告 -->
+    <view class="imgbox">
+      <image mode="widthFix" src="../../static/kouwei.png"></image>
+    </view>
+    <!-- 歌单媒体列表 -->
+    <musiclist-media musicListId="19723756"></musiclist-media>
+    <musiclist-media musicListId="3779629"></musiclist-media>
+    <musiclist-media musicListId="2884035" musicLisText="每周四更新"></musiclist-media>
+    <musiclist-media musicListId="3778678" musicLisText="每周四更新"></musiclist-media>
+  </view>
+</view>

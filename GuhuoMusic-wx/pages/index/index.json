@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "musiclist-media":"/components/musiclist-media/musiclist-media"
+  }
+}
