@@ -1,0 +1,10 @@
+<template name="one-music">
+  <view class="one-music">
+    <view class="index">{{index+1}}</view>
+    <view class="main-music">
+      <text class="name">{{item.name}}</text>
+      <text class="detail">{{item.ar[0].name}}-{{item.al.name}}</text>
+    </view>
+    <icon class="iconfont icon-play-full oneplayicon"></icon>
+  </view>
+</template>

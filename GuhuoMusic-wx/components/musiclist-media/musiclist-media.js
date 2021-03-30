@@ -30,6 +30,12 @@ Component({
   },
 
   methods: {
+    mediaClick(){
+      const id = this.data.musicListId
+      wx.navigateTo({
+        url: `/pages/listDetail/listDetail?id=${id}`,
+      })
+    },
     getMudic: function(id) {
       wx.request({
         url: `http://www.jibei66.com:3000/playlist/detail?id=${id}`,

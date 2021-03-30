@@ -1,0 +1,38 @@
+<import src="../../template/one-music/one-music.wxml"></import>
+
+<view class="music-main-container" style="background-color:{{backColor}}">
+  <!-- 基本信息 -->
+  <view class="detail-container">
+      <view class="img-container">
+        <image class="detail-image"  mode="widthFix" src="{{imgUrl}}"></image>
+      </view>
+      <view class="text-container">
+        <text class="tc-title">{{title}}</text>
+        <view class="author">
+          <image src="{{creater.avatarUrl}}"></image>
+          <text>{{creater.nickname}}</text>
+        </view>
+        <text class="tc-desc">{{description}}</text>
+      </view>
+  </view>
+  <!-- 分享按钮 -->
+  <view class="share-container">
+    <view class="share">分享给微信好友</view>
+  </view>
+  <!-- 歌曲列表 -->
+  <view class="list-container">
+    <!-- 播放控制按钮 -->
+    <view class="playall">
+      <icon class="iconfont icon-play-full playallicon"></icon>
+      <text class="playall-text">播放全部</text>
+      <text class="playall-length">（共{{musicList.length}}首）</text>
+    </view>
+    <template 
+      is="one-music"
+      wx:for="{{musicList}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="index"
+      data="{{item:item,index:index}}"></template>
+  </view>
+</view>

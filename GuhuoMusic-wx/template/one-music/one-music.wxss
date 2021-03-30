@@ -1,0 +1,48 @@
+.one-music{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+}
+.index{
+  width: 100rpx;
+  text-align: center;
+  color: #a1a1a1;
+}
+.main-music{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  width: 0;
+  margin-right: 60px;
+}
+.main-music .name{
+  color: #333333;
+  font-size: 35rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.main-music .detail{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  color: #a1a1a1;
+  font-size: 25rpx;
+}
+.oneplayicon{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  color: #cccccc;
+  width: 45rpx;
+  height: 45rpx;
+  font-size: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
