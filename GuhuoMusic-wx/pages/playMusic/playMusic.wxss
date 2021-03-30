@@ -1,0 +1,92 @@
+.playmusic-container{
+  background-color: #0b0c12;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300%;
+  filter: brightness(50%);
+}
+.image-container{
+  position: relative;
+}
+.image-container .point{
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 340rpx;
+  width: 67rpx;
+  height: 67rpx;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 20rpx solid white;
+}
+.image-container .needle{
+  position: absolute;
+  z-index: 3;
+  top: 34rpx;
+  left: 325rpx;
+  width: 290rpx;
+  height: 310rpx;
+  transform-origin: 40rpx 0;
+  transition: all .5s;
+  transform: rotate(-5deg);
+}
+.image-container .needle-move{
+  transform: rotate(10deg);
+}
+.image-container .disc-box{
+  position: absolute;
+  z-index: 2;
+  top: 220rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600rpx;
+  height: 600rpx;
+}
+.anibox{
+  width: 100%;
+  height: 100%;
+}
+.image-container .music-img{
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  height: 60%;
+}
+.image-container .disc{
+  width: 100%;
+  height: 100%;
+}
+.image-container .playIcon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: white;
+  border: 1rpx solid white;
+  border-radius: 50%;
+}
+.musicImgRotate {
+  animation: rotate 12s linear infinite;
+}  
+@keyframes rotate {
+  0% {
+      transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
+.animatepause{
+  animation-play-state:paused;
+}

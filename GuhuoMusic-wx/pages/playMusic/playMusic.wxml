@@ -1,0 +1,21 @@
+<view class="playmusic-container"
+  style="background-image:{{backgroundStyle}}">
+  <view class="image-container">
+    <!-- 装饰点 -->
+    <view class="point"></view>
+    <!-- 唱针 -->
+    <image src="../../static/needle.png" class="needle {{isPlay&&'needle-move'}}"></image>
+    <!-- 黑胶唱片 -->
+    <view class="disc-box">
+      <view class="anibox musicImgRotate {{!isPlay&&'animatepause'}}">
+        <image class="music-img" src="{{musicObj.al.picUrl}}"></image>
+        <image src="../../static/disc.png" class="disc"></image>
+      </view>
+      <view bindtap="iconClick" class="iconfont playIcon {{isPlay?'icon-pause-full':'icon-play-full'}}"></view>
+    </view>
+  </view>
+  <!-- 歌词容器 -->
+  <view class="lrc-container">
+
+  </view>
+</view>
